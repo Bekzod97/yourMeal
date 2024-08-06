@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourMeal</title>
+
+    <link rel="preload" href="fonts/nunito-v26-cyrillic_latin-600.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/nunito-v26-cyrillic_latin-800.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/nunito-v26-cyrillic_latin-regular.woff2" as="font" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <a class="header__link" href="#!">
+                <img class="header__logo" src="images/logo.svg" alt="logo">
+            </a>
+
+            <div class="header__main">
+
+
+                <img class="header__main-logo" src="images/header-burger.png" alt="burger">
+
+                <div class="header__description">
+                    <h1 class="header__title">Только самые
+                        <span>сочные бургеры!</span>
+                    </h1>
+
+                    <p class="header__text">Бесплатная доставка от <span>599₽</span></p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- choose tabs start -->
+        <section class="choose">
+            <div class="container">
+                <div class="choose__inner">
+                    <div class="chooses__buttons">
+                        <button class="tab__btn btn-active" data-item-btn="burgers">
+                            <img class="btn__icon" src="images/icons/burgers.svg" alt="burgers">
+                            Бургеры
+                        </button>
+
+                        <button class="tab__btn" data-item-btn="snacks">
+                            <img class="btn__icon" src="images/icons/snacks.svg" alt="snacks">
+                            Закуски
+                        </button>
+
+                        <button class="tab__btn" data-item-btn="hot-dogs">
+                            <img class="btn__icon" src="images/icons/hot-dogs.svg" alt="hot-dogs">
+                            Хот-доги
+                        </button>
+
+                        <button class="tab__btn" data-item-btn="pizzas">
+                            <img class="btn__icon" src="images/icons/pizzas.svg" alt="pizzas">
+                            Пицца
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- choose tabs end -->
+
+        <section class="content">
+            <div class="container">
+                <div class="content__inner">
+                    <!-- Корзина -->
+                    <section class="basket ">
+                        <div class="basket__inner">
+                            <div class="basket__info">
+                                <h2 class="basket__title">Корзина</h2>
+                                <button class="basket__current">0</button>
+
+                            </div>
+
+                            <div class="basket__show">
+                                <div class="basket__items ">
+
+                                    <p class="basket__empty">Тут пока пусто :(</p>
+                                </div>
+
+                                <div class="basket__form">
+                                    <div class="total">
+                                        <p class="total__text">Итого</p>
+                                        <p class="total__price">0</p>
+                                    </div>
+
+                                    <button class="basket__order place__order">
+                                        Оформить заказ
+                                    </button>
+
+                                    <div class="basket__delivery">
+                                        <img src="images/icons/scooter.svg" alt="scooter">
+                                        <span class="basket__delivery-text">Бесплатная доставка</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--Карты  -->
+
+                    <section class="cards">
+
+                        <div class="cards__inner">
+                            <h2 class="card__title">Бургеры</h2>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__descr">
+                    <img class="footer__logo" src="images/footer-logo.svg" alt="logo">
+
+                    <div class="footer__copyright">
+                        <p class="copyright__text">© YouMeal, 2022</p>
+                        <p class="copyright__dev">Design:
+                            <a class="copyright__dev-link" href="#!">Mirzayev Bekzod</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <div class="footer__order">
+                        <div class="order__text">Номер для заказа</div>
+
+                        <div class="order__info">
+                            <img class="order__img" src="images/icons/call.svg" alt="telephone">
+                            <a class="order__link" href="#!">+7(930)833-38-11</a>
+                        </div>
+                    </div>
+
+                    <div class="footer__social">
+                        <p class="social__text">Мы в соцсетях</p>
+                        <div class="social__icon">
+                            <a href="#!"> <img class="icon__vk" src="images/icons/vk.svg" alt="vkom"></a>
+
+                            <a href="#!"> <img class="icon__tg" src="images/icons/tg.svg" alt="vkom"></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="footer__copyright-mobile">
+                    <p class="copyright__text">© YouMeal, 2022</p>
+                    <p class="copyright__dev">Design:
+                        <a class="copyright__dev-link" href="#!">Mirzayev Bekzod</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+
+    <div class="modal">
+        <div class="modal__main">
+            <button class="modal__close">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5.0752" y="5.28249" width="1" height="20" transform="rotate(-45 5.0752 5.28249)"
+                        fill="#B1B1B1" />
+                    <rect x="5.78223" y="19.4246" width="1" height="20" transform="rotate(-135 5.78223 19.4246)"
+                        fill="#B1B1B1" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+    <script src="js/products.json"></script>
+
+    <script type="module" src="js/render.js"></script>
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/tabs.js"></script>
+    <script type="module" src="js/modalDetail.js"></script>
+    <script type="module" src="js/delivery.js"></script>
+
+
+</body>
+
+</html>
